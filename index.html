@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPELION GLOBAL - Global Trade Excellence</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for features -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Link to external CSS file for custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+
+    <!-- Custom Tailwind Configuration (Must remain here after the CDN link) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cream-bg': '#fcfaf7',
+                        'primary-dark': '#292524', // Stone-900 equivalent for text
+                        'accent-brown': '#7c5f40', // Deep brown/orange for primary elements
+                        'light-tan': '#f2f0ec', // Lighter container background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                        times: ['Times New Roman', 'Times', 'serif']
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+                        'xl-soft': '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<!-- <body> -->
+  <body class="bg-[#f7f2ea] text-primary-dark">
+
+    <!-- header -->
+<!-- header -->
+<!-- header -->
+<!-- header -->
+<header id="site-header" class="bg-white shadow-sm relative z-20">
+  <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-4 sm:px-6 lg:px-8">
+
+    <!-- Left: Logo + Site Name -->
+    <div class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+      <img src="/Images/LOGO_Opelion.jpg" alt="OPELION GLOBAL Logo" class="h-12 sm:h-14 w-auto">
+      <div class="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-semibold text-primary-dark whitespace-nowrap">
+        OPELION GLOBAL
+      </div>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <nav class="hidden md:flex flex-1 justify-center space-x-8 lg:space-x-10 font-sans text-base lg:text-lg">
+    <a href="#home" class="nav-link font-medium text-primary-dark hover:text-accent-brown">Home</a>
+    <a href="#about" class="nav-link font-medium text-primary-dark hover:text-accent-brown">About</a>
+    <a href="#products" class="nav-link font-medium text-primary-dark hover:text-accent-brown">Products</a>
+  </nav>
+
+    <!-- Right: CTA Button -->
+    <div class="hidden md:flex flex-shrink-0">
+      <a href="#contact" 
+         class="px-4 py-2 lg:px-5 lg:py-2 rounded-lg bg-accent-brown text-white font-bold shadow-md hover:bg-[#6a4f36] transition" 
+         style="font-family: 'Times New Roman', Times, serif;">
+         GET IN TOUCH
+      </a>
+    </div>
+
+ 
+
+
+
+
+
+    <!-- Mobile Hamburger -->
+    <button id="menu-btn" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-primary-dark" xmlns="http://www.w3.org/2000/svg" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200 shadow-md">
+    <nav class="flex flex-col space-y-4 py-6 px-6">
+      <a href="#home" class="text-primary-dark font-medium hover:text-accent-brown">Home</a>
+      <a href="#about" class="text-primary-dark font-medium hover:text-accent-brown">About</a>
+      <a href="#products" class="text-primary-dark font-medium hover:text-accent-brown">Products</a>
+      <a href="#contact" 
+         class="px-5 py-2 text-center rounded-lg bg-accent-brown text-white font-medium shadow-md hover:bg-[#6a4f36] transition">
+         Get in Touch
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- SCRIPT for toggle -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+
+<!-- MAIN -->
+<main class="pt-2 pb-6">
+  <div class="w-full bg-white rounded-[48px] shadow-xl px-6 md:px-8 lg:px-12 py-4 md:py-6 space-y-6">
+
+    <!-- Hero -->
+    <section id="home" class="bg-light-tan rounded-[40px] shadow-soft">
+      <div class="relative min-h-[400px] sm:min-h-[500px] md:min-h-[650px] bg-cover bg-center rounded-[40px] overflow-hidden"
+           style="background-image:url('/Images/hero-bg.jpg')">
+        <div class="absolute inset-0 bg-primary-dark/30"></div>
+
+        <!-- Hero Content -->
+        <div class="absolute inset-0 flex items-center px-6 sm:px-10 md:px-16 lg:px-20">
+          <div class="max-w-3xl text-white font-times">
+            <p class="text-xl sm:text-2xl md:text-3xl mb-3 font-medium hero-text-shadow">
+              Where Quality Meets Trust
+            </p>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight hero-text-shadow text-white">
+            Empowering <br class="hidden sm:block"> Global Trade <br class="hidden sm:block"> With Indian <br class="hidden sm:block"> Excellence
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl max-w-xl hero-text-shadow">
+              We connect premium Indian agro products with the world, ensuring quality,
+              reliability, and sustainable partnerships for global food companies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+<section id="about" class="p-6 md:p-16 mb-12">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center content-card gap-12 relative">
+
+      <div class="w-full md:w-1/2 relative min-h-[350px] sm:min-h-[450px] md:min-h-[550px] lg:min-h-[600px] xl:min-h-[700px]">
+        
+        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="150" cy="150" r="140" fill="#7c5f40" class="opacity-10" />
+          <circle cx="50" cy="250" r="50" fill="#7c5f40" class="opacity-20" />
+          <circle cx="250" cy="50" r="30" fill="#b48d64" class="opacity-30" />
+        </svg>
+
+        <div class="absolute top-0 left-0 
+                     w-[65%] h-[65%] sm:w-[280px] sm:h-[280px] 
+                     lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 
+                     rounded-[2rem] overflow-hidden shadow-xl-soft 
+                     transform transition duration-500 ease-in-out hover:scale-105">
+          <img src="/Images/our-story2.jpg" alt="Team collaborating" class="w-full h-full object-cover">
+        </div>
+
+        <div class="absolute bottom-0 right-0 
+                     w-[65%] h-[65%] sm:w-[280px] sm:h-[280px] 
+                     lg:w-[350px] lg:h-[350px] xl:w-[400px] xl:h-[400px] 
+                     rounded-[2rem] overflow-hidden shadow-xl-soft 
+                     transform transition duration-500 ease-in-out hover:scale-105">
+          <img src="/Images/about-hands.jpeg" alt="Presentation" class="w-full h-full object-cover">
+        </div>
+      </div>
+
+      <div class="w-full md:w-7/12 relative mt-6 md:mt-0 px-4 sm:px-0">
+        <p class="text-xl tracking-[0.25em] text-[#B48D64] mb-3 font-serif italic">Our Values</p>
+        <h2 class="text-3xl md:text-5xl font-serif font-semibold italic mb-8 text-brown-600 drop-shadow-lg">Our Story</h2>
+
+        <div class="space-y-6 text-gray-700 text-lg md:text-xl leading-relaxed font-serif italic">
+          <p>At <span class="font-bold text-brown-600">Opelion Global</span>, our journey began with a simple vision — 
+          to connect the world with the richness of India. Rooted in trust and driven by excellence, we have grown 
+          into a global export house that delivers quality beyond borders.</p>
+
+          <p>With a strong focus on reliability and innovation, we continue to expand our footprint, taking India’s 
+          heritage and quality to international markets with pride.</p>
+
+          <p>We represent Indian agro excellence to the world and aim to be a trusted sourcing partner globally.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Key Features Section -->
+
+                <section id="features" class="bg-light-tan rounded-2xl p-8 md:p-16 shadow-soft mb-12" style="padding-top: 24px;">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <p class="text-sm uppercase tracking-widest text-accent-brown mb-2">Our Advantage</p>
+                        <h2 class="text-3xl md:text-4xl font-serif font-semibold italic mb-16 text-brown-600 drop-shadow-lg"> Key Features </h2> 
+                        
+                        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr_1fr] gap-10 items-center relative">
+                            
+                            <div class="space-y-12 text-left lg:pr-6 z-20">
+                                
+                                <div class="flex flex-col items-start text-left gap-4"> 
+                                    <i data-lucide="shield-check" class="text-accent-brown w-10 h-10"></i>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary-dark mb-2">Quality Assurance</h3>
+                                        <p class="text-gray-600 text-base md:text-lg"> Rigorous checks ensure premium <br> quality in every product. </p>
+                                    </div>
+                                </div> 
+                                
+                                <div class="flex flex-col items-start text-left gap-4"> 
+                                    <i data-lucide="globe" class="text-accent-brown w-10 h-10"></i>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary-dark mb-2">Global Reach</h3>
+                                        <p class="text-gray-600 text-base md:text-lg"> Serving importers, wholesalers, and <br> food companies worldwide. </p>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <div class="flex justify-center items-center relative w-full min-h-[400px] z-10">
+                                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="150" cy="150" r="140" fill="#7c5f40" class="opacity-10" />
+                                    <circle cx="50" cy="250" r="50" fill="#7c5f40" class="opacity-20" />
+                                    <circle cx="250" cy="50" r="30" fill="#b48d64" class="opacity-30" />
+                                </svg> 
+                                
+                                <div class="absolute top-0 left-0 w-3/4 sm:w-2/3 max-w-xs h-64 sm:h-72 rounded-[2rem] overflow-hidden shadow-xl-soft transform -translate-x-4 -translate-y-4 transition duration-500 ease-in-out hover:scale-105 cursor-pointer"> 
+                                    <img src="/Images/crop-field.jpg" alt="Feature Image 1" class="w-full h-full object-cover"> 
+                                </div> 
+                                
+                                <div class="absolute bottom-0 right-0 w-3/4 sm:w-2/3 max-w-xs h-64 sm:h-72 rounded-[2rem] overflow-hidden shadow-xl-soft transform translate-x-4 translate-y-4 transition duration-500 ease-in-out hover:scale-105 cursor-pointer"> 
+                                    <img src="/Images/earth-globe.jpeg" alt="Feature Image 2" class="w-full h-full object-cover"> 
+                                </div>
+                            </div> 
+                            
+                            <div class="space-y-12 text-left lg:pl-6 z-20">
+                                
+                                <div class="flex flex-col items-start text-left gap-4"> 
+                                    <i data-lucide="leaf" class="text-accent-brown w-10 h-10"></i>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary-dark mb-2">Sustainable Sourcing</h3>
+                                        <p class="text-gray-600 text-base md:text-lg"> Committed to ethical and<br> environmentally responsible<br> agricultural practices. </p>
+                                    </div>
+                                </div> 
+                                
+                                <div class="flex flex-col items-start text-left gap-4"> 
+                                    <i data-lucide="layers" class="text-accent-brown w-10 h-10"></i>
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-primary-dark mb-2">Diverse Portfolio</h3>
+                                        <p class="text-gray-600 text-base md:text-lg"> Wide range of agro and<br> food products available. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+              </div>
+
+</main>
+
+<!-- Products section -->
+
+<section id="products" class="bg-light-tan rounded-2xl p-8 md:p-16 shadow-soft mb-12" >
+
+    <div class="max-w-7xl mx-auto text-center" style="padding-top: 24px; padding-bottom: 24px;">
+        
+        <h2 class="products-title mb-12">
+            <span class="small-text">Explore Our</span><br>
+            <span class="big-text">Products Range</span>
+        </h2>
+
+        <div class="products-grid grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="product-card">
+                <img src="/Images/quinoa.jpeg" alt="Quinoa">
+                <h3>Quinoa & Products</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/millets.jpg" alt="Millets">
+                <h3>Millets & Millet Flours</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/lentils.jpg" alt="Lentils">
+                <h3>Lentils & Pulses</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/seeds.jpg" alt="Seeds">
+                <h3>Seeds</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/rice.jpeg" alt="Rice">
+                <h3>Rice</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/grains.jpg" alt="Grains">
+                <h3>Grains</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/spices.png" alt="Spices">
+                <h3>Indian Spices</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/dehydrated.jpg" alt="Dehydrated">
+                <h3>Dehydrated Vegetables & Fruits</h3>
+            </div>
+
+            <div class="product-card">
+                <img src="/Images/Foxnuts-Makhana.jpg" alt="Cereals">
+                <h3>Foxnut-Makhana & Products</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="view-more-container" style="text-align: center; margin-top: 20px;">
+        <a href="detailed_products.html" class="view-more-btn">View More Products</a>
+    </div>
+</section>
+
+<!-- Leadership Message Section -->
+<section id="leadership" class="bg-light-tan rounded-2xl p-6 sm:p-10 md:p-16 shadow-soft mb-12">
+  <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+      
+    <!-- Left: Text -->
+    <div class="w-full md:w-1/2">
+      <p class="text-sm sm:text-base text-[#B48D64] mb-2 tracking-wide">Leadership Message</p>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold mb-6">Our Founder</h2>
+
+      <!-- Quote Box -->
+      <div class="bg-gray-100 p-4 sm:p-6 rounded-[20px] relative shadow-md max-w-lg mx-auto md:mx-0">
+        <p class="text-base sm:text-lg text-gray-700 leading-relaxed font-serif flex items-start italic">
+          <!-- Opening quote SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="currentColor" 
+              stroke-width="1.5" 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              class="w-8 h-8 sm:w-10 sm:h-10 text-[#B48D64] opacity-70 mr-3 flex-shrink-0">
+            <path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+            <path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"></path>
+          </svg>
+          At Opelion Global, we are driven by a passion for quality and a commitment to building lasting 
+          relationships. We aim to be the bridge connecting India's finest agro products to the global market.
+        </p>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="w-full md:w-1/2 rounded-[24px] overflow-hidden shadow-lg">
+      <img src="/Images/leadership.jpg" alt="Our Founder" 
+           class="w-full h-[250px] sm:h-[320px] md:h-[400px] object-cover rounded-[24px]">
+    </div>
+  </div>
+</section>
+
+
+
+            <!--  Contact Section-->
+
+            <div class="font-serif text-[#5D5C5A] min-h-screen bg-[#f7f0e7]">
+
+                <section id="contact" class="bg-white py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-6 rounded-[24px] shadow-lg">
+
+                    <div class="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
+
+                        <div class="w-full md:w-1/2 shadow-lg rounded-[24px] overflow-hidden h-[250px] md:h-[350px]">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.298316683399!2d72.8833241!3d21.140523199999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be05013c8089f45%3A0x37083ae187c7a4cc!2s4VRM%2B58V%20Madhuram%20Arcade%2C%20Karadva%20Rd%2C%20New%20Dindoli%2C%20Karadva%20Gam%2C%20Surat%2C%20Karadva%2C%20Gujarat%20394305!5e0!3m2!1sen!2sin!4v1759174082929!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-[24px]"></iframe>
+                        </div>
+
+                        <div class="w-full md:w-1/2 flex flex-col justify-center pt-4">
+                            <h2 class="text-3xl md:text-4xl font-light mb-8 text-black">Get In Touch</h2>
+                            <p class="text-lg font-light text-black mb-2">Opening Hours</p>
+                            <p class="text-base font-light text-gray-600 mb-6">9:00 AM – 6:00 PM</p>
+
+                            <p class="text-lg font-light text-black mb-2">Location</p>
+                            <p class="text-base font-light text-gray-600 mb-8">
+                                27M2, Aatman, Madhuram Arcade2, Kharvasa Road,
+                                Madhuram Circle, Dindoli, Udhna, Surat – 394210, Gujarat, India.
+                            </p>
+
+                            <a href="mailto:info@opeliionglobal.com" class="w-fit self-start bg-[#8B5E3C] text-white text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#6E482F] transition font-serif font-light">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#fbf7f2] rounded-[24px] p-8 md:p-12 flex flex-col md:flex-row justify-between items-start gap-12 mt-12 shadow-md">
+
+                        <div>
+                            <h3 class="text-2xl font-light mb-3 text-black">Contact Us</h3>
+                            <!-- <p class="text-base font-light mb-1">+91 99253 51966</p> -->
+                             <p class="text-base font-light mb-1" style="font-family: 'Times New Roman', Times, serif;">+91 99253 51966</p>
+                            <p class="text-base font-light mb-1">info@opelionglobal.com</p>
+                        </div>
+
+                        <div class="w-full md:w-1/2">
+                            <p class="text-sm font-light uppercase tracking-wide text-gray-500 mb-1">Get Latest News</p>
+                            <h3 class="text-2xl font-light mb-3 text-black">Subscribe</h3>
+
+                            <form id="subscribe-form" class="flex flex-col md:flex-row gap-4" action="YOUR_GOOGLE_APPS_SCRIPT_URL" method="POST" target="hidden_iframe" >
+                                <input type="email" id="emailInput" name="email" placeholder="Your email" required class="flex-grow px-6 py-3 rounded-lg bg-white border-0 text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#8B5E3C] font-light">
+
+                                <button type="submit" class="w-full md:w-fit self-start bg-[#8B5E3C] text-white text-base px-6 py-3 rounded-lg shadow-md hover:bg-[#6E482F] transition font-serif font-light">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </section>
+<!-- <form id="subscribe-form" action="YOUR_GOOGLE_APPS_SCRIPT_URL" method="POST" target="hidden_iframe"> -->
+  <!-- <input type="email" id="emailInput" name="email" placeholder="Enter your email" required> -->
+  <!-- <button type="submit">Subscribe</button> -->
+<!-- </form> -->
+
+<!-- Hidden iframe to prevent redirect after submit -->
+<iframe name="hidden_iframe" style="display:none;"></iframe>
+
+
+        
+          <!-- ===== FOOTER SECTION ===== -->
+<footer class="bg-[#f7f2ea] py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-[2fr,1fr,1fr,auto] gap-6 md:gap-12 items-start">
+    
+    <!-- Left Section -->
+    <div class="whitespace-nowrap">
+      <h2 class="text-2xl font-serif font-semibold text-primary-dark">
+        Opelion Global Private Limited.
+      </h2>
+      <p class="text-gray-700 text-base">Where Quality Meets Trust.</p>
+    </div>
+
+    <!-- Menu -->
+    <div>
+      <h4 class="text-lg font-serif font-semibold mb-4 text-primary-dark tracking-wide">MENU</h4>
+      <ul class="space-y-2 text-gray-800 text-base">
+        <li><a href="#home" class="hover:text-[#8B5E3C] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#8B5E3C] transition">About</a></li>
+        <li><a href="#products" class="hover:text-[#8B5E3C] transition">Products</a></li>
+        <li><a href="#contact" class="hover:text-[#8B5E3C] transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h4 class="text-lg font-serif font-semibold mb-4 text-primary-dark tracking-wide">SERVICE</h4>
+      <ul class="space-y-2 text-gray-800 text-base">
+        <li>Private Labeling</li>
+        <li>White Labeling</li>
+        <li>Bulk Export & Customized Order</li>
+        <li>Custom Packaging</li>
+      </ul>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="flex md:justify-end gap-5">
+      <a href="https://www.facebook.com/opelionnglobal" target="_blank" rel="noopener noreferrer">
+        <img src="/Images/fb.png" alt="Facebook" class="w-5 h-5">
+      </a>
+      <a href="https://x.com/opelionglobal?t=7LXOYwlCiz4C4Dx2HKHP4Q&s=08" target="_blank" rel="noopener noreferrer">
+        <img src="/Images/twitter.png" alt="Twitter" class="w-5 h-5">
+      </a>
+      <a href="https://www.instagram.com/opelionnglobal/" target="_blank" rel="noopener noreferrer">
+        <img src="/Images/instagram.png" alt="Instagram" class="w-5 h-5">
+      </a>
+      <a href="https://www.linkedin.com/company/108613234/admin/dashboard/" target="_blank" rel="noopener noreferrer">
+        <img src="/Images/linkedin.png" alt="Linkedin" class="w-5 h-5">
+      </a>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-gray-300 mt-10 pt-6 text-center text-gray-600 text-sm">
+  <p>Copyright © <span style="font-family: 'Times New Roman', Times, serif;">2025</span> Opelion Global Pvt. Ltd. All Rights Reserved.</p>
+</div>
+</footer>
+
+
+
+<!-- Back to Top Button -->
+ <button id="backToTopBtn" 
+        class="fixed bottom-6 right-6 bg-[#B48D64] text-white w-12 h-12 flex items-center justify-center 
+               rounded-full shadow-lg hover:bg-[#7c5f40] transition duration-300">
+<!-- 
+<button id="backToTopBtn" 
+        class="hidden fixed bottom-6 right-6 bg-[#B48D64] text-white w-12 h-12 flex items-center justify-center 
+               rounded-full shadow-lg hover:bg-[#7c5f40] transition duration-300"> -->
+    <!-- Up Arrow Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+</button>
+
+<script>
+  // Show/hide button on scroll
+  const backToTopBtn = document.getElementById("backToTopBtn");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTopBtn.classList.remove("hidden");
+    } else {
+      backToTopBtn.classList.add("hidden");
+    }
+  });
+
+  // Scroll to top on click
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+            <!-- FontAwesome for Icons -->
+            <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+            <!-- Link to external JavaScript file -->
+            <script src="script.js" defer></script>
+</body>
+
+</html>
